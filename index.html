@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo</h1>
+        <h1>Qual é o seu jogo favorito?</h1>
+        <nav>
+            <ul>
+                <li><a href="desenvolvedores.html">Desenvolvedores</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Cadastro</h2>
+            <form id="cadastro-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+               
+                <label for="jogo-favorito">Jogo Favorito:</label>
+                <input type="text" id="jogo-favorito" required>
+               
+                <button type="button" onclick="adicionarRegistro()">Gravar</button>
+            </form>
+        </section>
+        <section>
+            <h2>Registros</h2>
+            <table>
+                <caption>Lista de Cadastros</caption>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Jogo Favorito</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-corpo">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>IFRN Campus Santa Cruz</p>
+        <p>Trabalho de Autoria Web</p>
+        <p>Prof. Marcelo Figueiredo Barbosa Júnior</p>
+        <p>Desenvolvido por:</p>
+        <p>João Tavares da Fonseca Neto</p>
+        <p>José Arthur Abreu de Lima</p>
+        <p>Juddson Matheus das Chagas Paixão</p>
+    </footer>
+    <script src="eventos.js"></script>
+</body>
+</html>
